@@ -1,5 +1,3 @@
-[![npm version](https://badge.fury.io/js/@qavajs%2Fcli.svg)](https://badge.fury.io/js/@qavajs%2Fcli)
-
 ## @qavajs/wdio-service-adapter
 
 Adapter for wdio services to use it in qavajs framework
