@@ -1,0 +1,26 @@
+{
+  "name": "@qavajs/wdio-service-adapter",
+  "version": "0.0.1",
+  "description": "adapter for wdio services",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --resetMocks"
+  },
+  "authors": [
+    "Alexandr Galichenko"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.5",
+    "chai": "^4.3.7",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
