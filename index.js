@@ -1,3 +1,3 @@
 const wdioService = require('./lib/wdioServiceAdapter');
 
-module.exports = wdioService;
+module.exports = wdioService.default;
