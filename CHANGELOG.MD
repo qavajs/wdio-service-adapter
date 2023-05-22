@@ -1,3 +1,6 @@
+## 0.0.3
+- fix handling of not defined hooks
+
 ## 0.0.2
 - fix export
 
