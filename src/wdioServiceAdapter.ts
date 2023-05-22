@@ -29,8 +29,12 @@ export default async function wdioService(serviceDefinition: string | [string, o
         : [serviceDefinition];
     const { launcher: ServiceClass } = await import(servicePath as string);
     const service = new ServiceClass(options, capabilities, config);
-    service.before = service.onPrepare.bind(service, config, capabilities);
-    service.after = service.onComplete.bind(service, config, capabilities);
+    if (service.onPrepare) {
+        service.before = service.onPrepare.bind(service, config, capabilities);
+    }
+    if (service.onComplete) {
+        service.after = service.onComplete.bind(service, config, capabilities);
+    }
     service.options = options;
     return service
 }

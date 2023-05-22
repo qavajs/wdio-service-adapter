@@ -5,7 +5,7 @@ Adapter for wdio services to use it in qavajs framework
 `npm install @qavajs/wdio-service-adapter`
 
 ### WDIO Adapter
-You can use existing wdio services e.g selenium-service, appium-service in qavajs framework.
+You can use existing wdio services e.g. selenium-service, appium-service in qavajs framework.
 Service definition can be string with module path or configuration tuple [modulePath, options, capabilities, config]
 
 simple use:
@@ -42,10 +42,10 @@ module.exports = {
 ```
 ## Hook mapping
 
- | wdio       | qavajs |
+| wdio       | qavajs |
 |------------|--------|
 | onPrepare  | before |
- | onComplete | after  |
+| onComplete | after  |
 
 ## Limitations
 - Currently only onPrepare and onComplete hooks are translated.
